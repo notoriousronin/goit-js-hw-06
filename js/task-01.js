@@ -2,9 +2,9 @@ const allCategoriesItems = document.querySelectorAll(".item");
 console.log("Number of Categories:", allCategoriesItems.length);
 
 allCategoriesItems.forEach((item) => {
-  const titleEl = document.querySelector("h2");
+  const titleEl = item.querySelector("h2");
   console.log("Category:", titleEl.textContent);
 
-  const Elements = document.querySelector("ul > li");
+  const Elements = item.querySelectorAll("ul > li");
   console.log("Elements:", Elements.length);
 });
