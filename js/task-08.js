@@ -12,7 +12,7 @@ function onFormSubmit(event) {
   if (email.value === "" || password.value === "") {
     return alert("Please, enter your information");
   }
-  console.log("Email: ${email.value}, Password: ${password.value}");
+  console.log({ email: email.value, password: password.value });
   event.currentTarget.reset();
 
   //   const formData = new FormData(event.currentTarget);
